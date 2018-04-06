@@ -2,8 +2,8 @@
 //December 7th, 2016
 //A simple Pong clone
 
-#include <Arduboy.h>
-Arduboy arduboy;
+#include <Arduboy2.h>
+Arduboy2 arduboy;
 
 //Variables declared here
 int gamestate = 0;
@@ -63,6 +63,8 @@ void loop() {
 			arduboy.setCursor(30, 0);
 			arduboy.print(playerscore);
 			//Display the computer's score
+      arduboy.setCursor(95, 0);
+      arduboy.print("Com:");
 			arduboy.setCursor(115, 0);
 			arduboy.print(computerscore);
 			//Draw the ball
